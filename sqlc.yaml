@@ -1,0 +1,11 @@
+version: "2"
+sql:
+  - schema: "schema.sql"
+    queries: "query.sql"
+    engine: "sqlite"
+    gen:
+      go:
+        package: "main"
+        out: "."
+        emit_interface: true
+        emit_prepared_queries: true
